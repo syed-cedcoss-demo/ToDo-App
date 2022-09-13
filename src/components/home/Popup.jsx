@@ -70,7 +70,7 @@ const Popup = ({ open, setOpen, setData, id }) => {
 
   return (
     <Dialog open={open} onClose={() => setOpen(!open)}>
-      <DialogTitle>Subscribe</DialogTitle>
+      <DialogTitle>{id ? "Update TODO" : "Add TODO"}</DialogTitle>
       <DialogContent>
         <TextField
           autoFocus

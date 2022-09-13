@@ -40,12 +40,15 @@ const TableView = () => {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell align="center">ToDo App</TableCell>
+            <TableCell align="center">TODO APP</TableCell>
             <TableCell align="right">
               <Button
                 variant="outlined"
                 startIcon={<AddIcon />}
-                onClick={() => setOpen(true)}
+                onClick={() => {
+                  setOpen(true);
+                  setId();
+                }}
               >
                 Add
               </Button>
